@@ -918,3 +918,57 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .carousel__btn { width: 38px; height: 38px; }
   .gallery-group__head { flex-wrap: wrap; gap: .25rem; }
 }
+
+/* ============================================
+   FAQ / HONORARIOS
+   ============================================ */
+.faq {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 900px; /* Para que no se estire demasiado en pantallas grandes */
+}
+
+.faq__item {
+  background: #fff;
+  border: 1px solid rgba(26, 42, 58, 0.08);
+  border-radius: 3px;
+  padding: 1.75rem 2rem;
+  transition: var(--transition);
+}
+
+.faq__item:hover {
+  border-color: var(--secondary);
+  box-shadow: 0 8px 24px rgba(26, 42, 58, 0.06);
+}
+
+.faq__item h3 {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+.faq__item p {
+  font-size: 0.95rem;
+  color: var(--gray);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.faq__item strong {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* Ajuste para móviles */
+@media (max-width: 768px) {
+  .faq__item {
+    padding: 1.25rem 1.5rem;
+  }
+  .faq__item h3 {
+    font-size: 1.2rem;
+  }
+}
